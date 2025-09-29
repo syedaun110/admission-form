@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="form-box">
+        <h2>Feedback Form</h2>
+
+        <label for="name">Name <span>*</span></label>
+        <input type="text" id="name" placeholder="username" name="name" required>
+        <div class="error" id="error-user"></div>
+
+
+        <label for="email">Email <span>*</span></label>
+        <input type="email" id="email" placeholder="@gmail.com"   name="email" required>
+        <div class="error" id="error-email"></div>
+
+
+        <label for="phone">Phone Number <span>*</span></label>
+        <input type="number" id="phone" placeholder="+92 XXXXXXXXXX"   name="phone" required>
+        <div class="error" id="error-phone"></div>
+
+
+        <label for="message">Message <span>*</span></label>
+        <textarea id="message" placeholder="HELLO!" name="message" required></textarea>
+        <div class="error" id="error-message"></div>
+
+
+        <button type="submit"  onclick="submitData()" class="submit-btn">Send Feedback</button>
+
+    </div>
+
+</body>
+<script src="./index.js"></script>
+
+</html>
